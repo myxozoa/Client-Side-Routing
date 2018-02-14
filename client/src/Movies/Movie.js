@@ -1,5 +1,7 @@
 import React from 'react';
 import axios from 'axios';
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+
 
 export default class MovieCard extends React.Component {
 
@@ -40,6 +42,7 @@ export default class MovieCard extends React.Component {
             {star}
           </div>
         ))}
+        <Link to='/'>Home</Link>
       </div>
     );
   }
